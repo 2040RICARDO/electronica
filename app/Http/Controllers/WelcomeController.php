@@ -28,15 +28,16 @@ class WelcomeController extends Controller
     {
 
         $categorias = Categoria::orderBy('id')->get();
+        return view('welcome',compact('categorias'));
     
-        return Inertia::render('Welcome', [
+        /* return Inertia::render('Welcome', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
             'laravelVersion' => Application::VERSION,
             'phpVersion' => PHP_VERSION,
             'categorias'=>$categorias
 
-        ]);
+        ]); */
     }
 
     public function producto($categoriaId=null){

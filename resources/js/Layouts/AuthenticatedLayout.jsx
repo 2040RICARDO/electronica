@@ -102,14 +102,16 @@ export default function Authenticated({ user, header, children }) {
                         <br />
                         <hr />
 
-                        <Link
+
+                        
+
+                        <a
                             href={route('logout')}
-                            method="post"
                             className="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-teal-500 hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out"
                         >
                             <i className="pi pi-sign-out mr-3" ></i>
                             <span className="">Salir</span>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

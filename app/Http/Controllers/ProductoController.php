@@ -77,6 +77,7 @@ class ProductoController extends Controller
             return redirect()->route('producto.index','Registro realizado con exito.');
 
         } catch (\Exception $e) {
+            dd($e);
             return response()->json(['error'=>$e]);
         }
 

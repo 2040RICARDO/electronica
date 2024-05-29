@@ -165,9 +165,9 @@ export default function CompraProducto({}) {
                         <div className="flex items-center justify-between mb-10 lg:mb-0">
                             
 
-                            <Link href={route('welcome')} className="w-10 h-10 flex items-center justify-center text-red-700 border border-red-700 rounded-md mr-4">
+                            <a href={route('welcome')} className="w-10 h-10 flex items-center justify-center text-red-700 border border-red-700 rounded-md mr-4">
                                 <Home size={15}/>
-                            </Link>
+                            </a>
                         </div>
 
                         <ul className="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-16" >
